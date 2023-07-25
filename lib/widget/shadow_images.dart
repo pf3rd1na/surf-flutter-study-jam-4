@@ -3,9 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:surf_practice_magic_ball/provider/answer_provider.dart';
 import 'package:surf_practice_magic_ball/util/screen_dimensions.dart';
 
-// This widget is used to show shadow under the ball.
-// It is used in [magic_ball_screen.dart].
-// Color is changed to red if there is an error in answer.
+/// A widget that shows a shadow under the ball in the [MagicBallScreen].
+/// The color of the shadow changes to red if there is an error in the answer.
 class ShadowImages extends ConsumerWidget {
   const ShadowImages({super.key});
 

@@ -5,6 +5,8 @@ import 'package:surf_practice_magic_ball/model/settings.dart';
 import 'package:surf_practice_magic_ball/provider/answer_provider.dart';
 import 'package:surf_practice_magic_ball/widget/circle.dart';
 
+/// A widget that displays an animated circle that grows and shrinks.
+/// The color of the circle depends on the answer provided by the [answerProvider].
 class AnimatedCircle extends ConsumerStatefulWidget {
   const AnimatedCircle({super.key});
 

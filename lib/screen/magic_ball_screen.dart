@@ -10,7 +10,6 @@ import 'package:surf_practice_magic_ball/util/http_manager.dart';
 import 'package:surf_practice_magic_ball/util/screen_dimensions.dart';
 import 'package:surf_practice_magic_ball/widget/animated_magic_ball.dart';
 import 'package:surf_practice_magic_ball/widget/footer.dart';
-import 'package:surf_practice_magic_ball/widget/magic_ball.dart';
 import 'package:surf_practice_magic_ball/widget/shadow_images.dart';
 
 class MagicBallScreen extends ConsumerStatefulWidget {
@@ -23,7 +22,7 @@ class MagicBallScreen extends ConsumerStatefulWidget {
 class _MagicBallScreenState extends ConsumerState<MagicBallScreen> {
   bool _isWaitingForAnswer = false;
 
-  // This method is called when user tap on MagicBall or shake phone.
+  /// This method is called when user tap on MagicBall or shake phone.
   // It makes request to server and shows answer.
   // If user tap on MagicBall or shake phone while waiting for answer, nothing happens.
   // This is done to prevent multiple requests to server.

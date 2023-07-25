@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:surf_practice_magic_ball/model/settings.dart';
 import 'package:surf_practice_magic_ball/widget/magic_ball.dart';
 
+/// This widget displays an animated [MagicBall]
 class AnimatedMagicBall extends StatefulWidget {
   const AnimatedMagicBall({super.key});
 

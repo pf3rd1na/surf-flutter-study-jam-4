@@ -23,8 +23,6 @@ double elementHeight(double referenceHeight, BuildContext context) =>
 double elementWidth(double referenceWidth, BuildContext context) =>
     referenceWidth * screenWidth(context) / kReferenceWidth;
 
-double elementSmallest(double reference, BuildContext context) =>
-    reference * screenWidth(context) / kReferenceWidth;
-
+/// Calculates text scale factor for current screen size.
 double textScaleFactor(BuildContext context) =>
     screenHeight(context) / kReferenceHeight;

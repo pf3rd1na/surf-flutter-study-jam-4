@@ -11,9 +11,26 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class SettingsScreenState extends State<SettingsScreen> {
+  final List<Widget> _settings = [];
+
+  void _loadSettings() async {
+    for (var element in UserSettings.list) {
+      _settings.add(
+        Row(
+          children: [
+            Text(element.type.toDisplayString()),
+            const Spacer(),
+            Text(element.value.inMilliseconds.toString()),
+          ],
+        ),
+      );
+    }
+  }
+
   @override
   void initState() {
     super.initState();
+    _loadSettings();
   }
 
   @override
@@ -25,7 +42,21 @@ class SettingsScreenState extends State<SettingsScreen> {
       ),
       body: Form(
         child: Column(
-          children: [],
+          children: [
+            ..._settings,
+            Row(
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Reset'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Save'),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
