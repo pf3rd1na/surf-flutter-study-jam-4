@@ -3,10 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:surf_practice_magic_ball/model/answer.dart';
 import 'package:surf_practice_magic_ball/model/settings.dart';
 import 'package:surf_practice_magic_ball/provider/answer_provider.dart';
+import 'package:surf_practice_magic_ball/provider/settings_provider.dart';
 import 'package:surf_practice_magic_ball/widget/circle.dart';
 
-/// A widget that displays an animated circle that grows and shrinks.
-/// The color of the circle depends on the answer provided by the [answerProvider].
 class AnimatedCircle extends ConsumerStatefulWidget {
   const AnimatedCircle({super.key});
 
@@ -18,19 +17,27 @@ class _AnimatedCircleState extends ConsumerState<AnimatedCircle>
     with SingleTickerProviderStateMixin {
   late Answer _answer;
   late AnimationController _controller;
+  Duration get _animationDuration => ref
+      .read(settingsProvider)
+      .firstWhere(
+        (element) => element.type == SettingsType.circleAnimationDuration,
+      )
+      .value;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: UserSettings.circleGrowDuration,
+      duration: _animationDuration,
       vsync: this,
     );
+    _controller.forward();
   }
 
   @override
   void didUpdateWidget(covariant AnimatedCircle oldWidget) {
     super.didUpdateWidget(oldWidget);
+    _controller.duration = _animationDuration;
     _controller
       ..reset()
       ..forward();

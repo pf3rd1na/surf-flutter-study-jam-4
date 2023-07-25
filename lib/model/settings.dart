@@ -9,7 +9,7 @@ const kBallBounceDuration = Duration(milliseconds: 2000);
 
 /// An enum representing the different types of settings available.
 enum SettingsType {
-  circleGrowDuration,
+  circleAnimationDuration,
   opacityDuration,
   ballBounceDuration,
 }
@@ -18,7 +18,7 @@ extension SettingsTypeExtension on SettingsType {
   /// Returns a string representation of the enum value.
   String toDisplayString() {
     switch (this) {
-      case SettingsType.circleGrowDuration:
+      case SettingsType.circleAnimationDuration:
         return 'Circle grow duration';
       case SettingsType.opacityDuration:
         return 'Opacity duration';
@@ -44,7 +44,7 @@ class UserSettings {
   /// A list of user settings.
   static List<UserSetting> list = [
     UserSetting(
-      SettingsType.circleGrowDuration,
+      SettingsType.circleAnimationDuration,
       kDefaultCircleAnimationDuration,
     ),
     UserSetting(
@@ -59,7 +59,8 @@ class UserSettings {
 
   /// Returns the duration of the circle grow animation.
   static Duration get circleGrowDuration => list
-      .firstWhere((element) => element.type == SettingsType.circleGrowDuration)
+      .firstWhere(
+          (element) => element.type == SettingsType.circleAnimationDuration)
       .value;
 
   /// Returns the duration of the opacity animation.

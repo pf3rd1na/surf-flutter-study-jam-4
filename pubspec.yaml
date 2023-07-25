@@ -18,7 +18,6 @@ dependencies:
   flutter_riverpod: ^2.3.6
   window_manager: ^0.3.5
   shake: ^2.2.0
-  shared_preferences: ^2.2.0
 
 dev_dependencies:
   flutter_test:

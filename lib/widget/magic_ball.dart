@@ -65,7 +65,8 @@ class MagicBallState extends ConsumerState<MagicBall>
         SizedBox(
           width: elementHeight(310, context),
           height: elementHeight(310, context),
-          child: const AnimatedCircle(),
+          // ignore: prefer_const_constructors
+          child: AnimatedCircle(),
         ),
         SizedBox(
           width: elementWidth(243, context),

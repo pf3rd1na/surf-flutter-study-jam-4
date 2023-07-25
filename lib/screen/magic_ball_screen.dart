@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shake/shake.dart';
+import 'package:surf_practice_magic_ball/main.dart';
 import 'package:surf_practice_magic_ball/model/answer.dart';
 import 'package:surf_practice_magic_ball/provider/answer_provider.dart';
 import 'package:surf_practice_magic_ball/screen/settings_screen.dart';
@@ -57,7 +58,9 @@ class _MagicBallScreenState extends ConsumerState<MagicBallScreen> {
   @override
   void initState() {
     super.initState();
-    ShakeDetector.autoStart(onPhoneShake: _tapHandler);
+    if (kMobilePlatform) {
+      ShakeDetector.autoStart(onPhoneShake: _tapHandler);
+    }
   }
 
   @override

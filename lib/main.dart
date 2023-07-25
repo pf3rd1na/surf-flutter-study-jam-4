@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:surf_practice_magic_ball/screen/magic_ball_screen.dart';
 import 'package:window_manager/window_manager.dart';
 
+final bool kMobilePlatform = Platform.isAndroid || Platform.isIOS;
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
