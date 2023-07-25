@@ -21,9 +21,9 @@ extension SettingsTypeExtension on SettingsType {
       case SettingsType.circleAnimationDuration:
         return 'Circle grow duration';
       case SettingsType.opacityDuration:
-        return 'Opacity duration';
+        return 'Opacity duration (not working)';
       case SettingsType.ballBounceDuration:
-        return 'Ball bounce duration';
+        return 'Ball bounce duration (not working)';
     }
   }
 }

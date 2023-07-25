@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:surf_practice_magic_ball/model/answer.dart';
 import 'package:surf_practice_magic_ball/model/settings.dart';
 import 'package:surf_practice_magic_ball/provider/answer_provider.dart';
+import 'package:surf_practice_magic_ball/provider/settings_provider.dart';
 import 'package:surf_practice_magic_ball/util/screen_dimensions.dart';
 import 'package:surf_practice_magic_ball/widget/animated_circle.dart';
 
@@ -42,6 +43,12 @@ class MagicBallState extends ConsumerState<MagicBall>
   @override
   Widget build(BuildContext context) {
     answer = ref.watch(answerProvider);
+    _animationController.duration = ref
+        .watch(settingsProvider)
+        .firstWhere(
+          (element) => element.type == SettingsType.opacityDuration,
+        )
+        .value;
     _animationController.forward(from: 0);
 
     return Stack(
