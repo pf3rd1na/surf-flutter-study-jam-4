@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 const kDefaultCircleGradientRadius = 0.0;
 
+/// Custom painter for [Circle].
+/// It draws a circle with a gradient of [color] and [radius].
 class CirclePainter extends CustomPainter {
   CirclePainter({
     required this.radius,
@@ -27,11 +29,14 @@ class CirclePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) => false;
+  bool shouldRepaint(CirclePainter oldDelegate) {
+    return oldDelegate.radius != radius || oldDelegate.color != color;
+  }
 }
 
-class Cirle extends StatelessWidget {
-  const Cirle({
+/// Creates a circle with a gradient of [color] and [radius].
+class Circle extends StatelessWidget {
+  const Circle({
     super.key,
     required this.color,
     this.radius,

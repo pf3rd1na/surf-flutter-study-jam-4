@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-// WARNING. THIS CODE DOESNT WORK PROPERLY. DONT HAVE TIME TO FINISH.
+// WARNING. THIS CODE DOESNT WORK PROPERLY. DONT HAVE TIME TO FINISH AND NOT USING IT IN PROJECT.
+// Main idea is to build ellipse runtime using CustomPainter instead of using image from Figma.
+// Linear gradient works fine, but radial gradient is not working properly.
+// You can watch [Circle] widget in [magic_ball_screen.dart] to see how Circle works.
 
 enum GradientType { radial, linear }
 

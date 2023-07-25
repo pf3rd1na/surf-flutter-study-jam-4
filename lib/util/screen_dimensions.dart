@@ -22,3 +22,9 @@ double elementHeight(double referenceHeight, BuildContext context) =>
 /// Calculates element width for current screen size. [referenceWidth] is a width of element on Figma screen.
 double elementWidth(double referenceWidth, BuildContext context) =>
     referenceWidth * screenWidth(context) / kReferenceWidth;
+
+double elementSmallest(double reference, BuildContext context) =>
+    reference * screenWidth(context) / kReferenceWidth;
+
+double textScaleFactor(BuildContext context) =>
+    screenHeight(context) / kReferenceHeight;

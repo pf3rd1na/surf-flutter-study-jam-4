@@ -1,21 +1,23 @@
 class Answer {
-  final String answer;
+  final String text;
   final bool isError;
+  final bool isWaiting;
 
   Answer({
-    required this.answer,
+    required this.text,
     this.isError = false,
+    this.isWaiting = false,
   });
 
   factory Answer.fromJson(Map<String, dynamic> json) {
     return Answer(
-      answer: json['reading'],
+      text: json['reading'],
     );
   }
 
   factory Answer.error(Object error) {
     return Answer(
-      answer: 'Error: $error',
+      text: 'Error: $error',
       isError: true,
     );
   }
