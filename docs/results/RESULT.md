@@ -18,13 +18,13 @@
 
 Скриншоты:
 
-[!Alt UI Screenshot](https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screenshot%202023-07-26%20at%2010.29.27.png)
-[!Alt UI Screenshot](https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screenshot%202023-07-26%20at%2010.29.38.png)
-[!Alt UI Screenshot](https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screenshot%202023-07-26%20at%2010.29.47.png)
-[!Alt UI Screenshot](https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screenshot%202023-07-26%20at%2010.29.58.png)
-[!Alt UI Screenshot](https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screenshot%202023-07-26%20at%2010.30.24.png)
+![Alt text](<../assets/Screenshot 2023-07-26 at 10.29.27.png>)
+![Alt text](<../assets/Screenshot 2023-07-26 at 10.29.38.png>)
+![Alt text](<../assets/Screenshot 2023-07-26 at 10.29.47.png>)
+![Alt text](<../assets/Screenshot 2023-07-26 at 10.29.58.png>)
+![Alt text](<../assets/Screenshot 2023-07-26 at 10.30.24.png>)
 
 Видео:
 
-https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screen%20Recording%202023-07-26%20at%2010.33.56.mov
-https://github.com/pf3rd1na/surf-flutter-study-jam-4/blob/study-jam-4/docs/assets/Screen%20Recording%202023-07-26%20at%2010.34.20.mov
+[Video](<../assets/Screen Recording 2023-07-26 at 10.33.56.mov>)
+[Video](<../assets/Screen Recording 2023-07-26 at 10.34.20.mov>)
