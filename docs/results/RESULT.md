@@ -26,5 +26,7 @@
 
 Видео:
 
-[Video](<../assets/Screen Recording 2023-07-26 at 10.33.56.mov>)
-[Video](<../assets/Screen Recording 2023-07-26 at 10.34.20.mov>)
+https://github.com/pf3rd1na/surf-flutter-study-jam-4/assets/119108357/d7317e6f-4416-4b81-9844-ab4dad655494
+
+https://github.com/pf3rd1na/surf-flutter-study-jam-4/assets/119108357/d80066bc-acad-4b2a-b158-0aeec09c4f9c
+
